@@ -1,0 +1,377 @@
+.contentContainer {
+    width: 100%;
+    max-width: 1930px;
+    min-width: 360px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+
+// Стили первой секции 
+
+
+.intoSection {
+    width: 100%;
+    padding: 288px 150px 138px 150px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-image: url('../../images/section_01_background.png');
+    background-size: cover;
+    background-position: 0;
+    background-repeat: no-repeat;
+}
+
+.introTitle {
+    max-width: 729px;
+    margin: 0 0 56px 0;
+    padding: 0;
+    color: #FFF;
+    font-family: Lora;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.8px;
+    position: relative;
+
+    &::after {
+        position: absolute;
+        content: '';
+        top: 50%;
+        left: -155px;
+        width: 125px;
+        height: 1px;
+        z-index: 1;
+        background-color: #fff;
+
+    }
+}
+
+.introSubtitleContainer {
+    width: 100%;
+    display: flex;
+    gap: 31px;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 56px;
+}
+
+.introSubtitleIcon {
+    width: 100%;
+    max-width: 70px;
+    aspect-ratio: 1;
+    background-image: url('../../images/icons/icon_wallet.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.introSubtitleTextContainer {
+    width: 100%;
+    max-width: 325px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.introSubtitleTextMain {
+    margin: 0;
+    padding: 0;
+    color: #FFF;
+    font-family: 'Open Sans';
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: left;
+    letter-spacing: 0.8px;
+}
+
+.introSubtitleText {
+    margin: 0;
+    padding: 0;
+    color: #FFF;
+    font-family: 'Open Sans';
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: left;
+    letter-spacing: 0.8px;
+}
+
+.introButtonContainer {
+    position: relative;
+    width: 100%;
+    max-width: 246px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 15px;
+}
+
+.introButtonLabel {
+    color: #FFF;
+    text-align: center;
+    font-family: Open Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.8px;
+}
+
+.introButton {
+    width: 203px;
+    height: 58px;
+}
+
+.introButtonIcon {
+    position: absolute;
+    right: -34px;
+    top: 8px;
+    bottom: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 34px;
+    background-image: url('../../images/icons/icon_arrow.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.introPinTechnic {
+    max-width: 224px;
+    position: absolute;
+    top: 178px;
+    left: 546px;
+}
+
+.introPinGarniture {
+    position: absolute;
+    top: 329px;
+    left: 959px;
+}
+
+.introPinTable {
+    max-width: 215px;
+    position: absolute;
+    top: 529px;
+    left: 891px;
+}
+
+
+// Стили второй секции
+
+
+.advantagesSection {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #FBF6EF;
+    position: relative;
+    padding: 101px 0 105px 515px;
+    padding-left: 515px;
+    box-sizing: border-box;
+}
+
+.advantagesTitleContainer {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 56px;
+}
+
+.advantagesTitle {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    max-width: 382px;
+    color: #002B45;
+    font-family: Lora;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    letter-spacing: 0.8px;
+}
+
+.advantagesTitleDecor {
+    width: 100%;
+    border-bottom: 1px solid #002B45;
+}
+
+.advantagesPointsContainer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.advantagesPointContainer {
+    width: 100%;
+    display: flex;
+    gap: 31px;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.advantagesPointIcon {
+    width: 100%;
+    max-width: 70px;
+    aspect-ratio: 1;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.advantagesPointIconKitchen {
+    background-image: url('../../images/icons/icon_kitchen.svg');
+}
+
+.advantagesPointIconCalendar {
+    background-image: url('../../images/icons/icon_calendar.svg');
+}
+
+.advantagesPointIconProject {
+    background-image: url('../../images/icons/icon_project.svg');
+}
+
+.advantagesPointTextContainer {
+    width: 100%;
+    max-width: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.advantagesPointTextMain {
+    margin: 0;
+    padding: 0;
+    color: #002B45;
+    font-family: 'Open Sans';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: left;
+    letter-spacing: 0.8px;
+}
+
+.advantagesPointText {
+    margin: 0;
+    padding: 0;
+    color: #002B45;
+    font-family: 'Open Sans';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: left;
+    letter-spacing: 0.8px;
+}
+
+.advantagesBackgroundImage {
+    width: 100%;
+    height: 150%;
+    z-index: 1;
+    max-height: 532px;
+    max-width: 420px;
+    background-image: url('../../images/section_02_background.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0;
+    top: -38px;
+}
+
+
+// Стили Третьей секции
+
+
+.catalogSection {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #fff;
+    position: relative;
+    padding: 158px 150px 100px 150px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.catalogTitle {
+    width: 100%;
+    color: #002B45;
+    font-family: Lora;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    letter-spacing: 0.8px;
+    position: relative;
+    margin-bottom: 50px;
+
+    &::after {
+        position: absolute;
+        content: '';
+        top: 50%;
+        left: -150px;
+        width: 130px;
+        height: 1px;
+        z-index: 1;
+        background-color: #002B45;
+
+    }
+}
+
+.catalogButtonsContainer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    gap: 53px;
+}
+
+.catalogButtonsMenuContainer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 14px;
+}
+
+.catalogButtonColor {
+    width: 137px;
+}
+
+.catalogButtonsControlContainer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 11px;
+}
+
+.catalogButtonAccept {
+    width: 165px;
+    height: 58px;
+}
+
+.catalogButtonDecline {
+    width: 148px;
+    height: 58px;
+}

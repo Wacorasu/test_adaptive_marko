@@ -1,0 +1,89 @@
+.container {
+    position: relative;
+    box-sizing: border-box;
+    width: 207px;
+    height: 58px;
+}
+
+.button {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    padding: 18px 0 18px 0;
+    position: relative;
+    background-color: #ffffff00;
+    border: 1px solid #000;
+    color: #002B45;
+}
+
+.buttonOpen {
+    border: none;
+    background: #002B45;
+    color: #FBF6EF;
+}
+
+.buttonContentContainer {
+    width: 100%;
+    align-items: baseline;
+    justify-content: center;
+    display: flex;
+    gap: 10px;
+}
+
+.text {
+    font-family: Open Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.icon {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 9px solid #002B45;
+    border-bottom: none;
+}
+
+.iconOpen {
+    border-top: none;
+    border-bottom: 9px solid #fff;
+}
+
+.dropdownListContainer {
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    top: 100%;
+    margin: 19px 0 0 0;
+    padding: 18px 0 18px 20px;
+    box-sizing: border-box;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: #fff;
+    border: none;
+    box-shadow: 0px 4px 7.3px 6px rgba(0, 0, 0, 0.05);
+}
+
+.dropdownListItemContainer {
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: baseline;
+    gap: 10px;
+}
+
+.dropdownListItem {
+    color: #002B45;
+    font-family: Open Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}

@@ -1,0 +1,126 @@
+.headerContainer {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background-color: rgba(0, 43, 69, 0.90);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contentContainer {
+    width: 100%;
+    max-width: 1930px;
+    min-width: 360px;
+    padding: 36px 150px 36px 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logoContainer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 35px;
+}
+
+.logo {
+    max-width: 178px;
+    object-fit: contain;
+}
+
+.logoMap {
+    max-width: 181px;
+    object-fit: contain;
+}
+
+.contactsContainer {
+    width: 100%;
+    max-width: 792px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.addressContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 231px;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.label {
+    margin: 0;
+    padding: 0;
+    color: #FFF;
+    font-family: Open Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.addressText {
+    margin: 0;
+    padding: 0;
+    color: #FFF;
+    font-family: Open Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.socialContactsContainer {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.iconMessengerContainer {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    gap: 16px;
+}
+
+.iconMessenger {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    max-width: 36px;
+    max-height: 36px;
+    object-fit: contain;
+    overflow: hidden;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+
+    &:hover {
+        opacity: 0.8;
+        transform: scale(1.03);
+    }
+}
+
+.phoneNumber {
+    margin: 0;
+    padding: 0;
+    color: #FFF;
+    font-family: Open Sans;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration: none;
+}

@@ -1,0 +1,41 @@
+.buttonMain {
+    width: 180px;
+    height: 50px;
+    margin: 0;
+    padding: 15px 0 15px 0;
+    font-family: Open Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+
+    &:hover {
+        opacity: 0.8;
+        transform: scale(1.03);
+    }
+}
+
+.transparentWhite {
+    background-color: #ffffff00;
+    border: 1px solid white;
+    color: #FFF;
+}
+
+.transparentDark {
+    background-color: #ffffff00;
+    border: 1px solid #000;
+    color: #002B45;
+}
+
+.dark {
+    border: none;
+    background: #002B45;
+    color: #FBF6EF;
+}
+
+.disabled {
+    background-color: #E1E1E1;
+    border: none;
+}
