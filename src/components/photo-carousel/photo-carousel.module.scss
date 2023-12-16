@@ -1,0 +1,123 @@
+.fancyboxContainer {
+    width: 287px;
+    height: 364px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.LinkContainer {
+    width: 100%;
+    height: 100%;
+}
+
+.mainImageContainer {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.mainImage {
+    width: 100%;
+    height: 100%;
+    background-color: #797979;
+    object-fit: cover;
+}
+
+.previewContainer {
+    width: 100%;
+    max-height: 80px;
+    background-color: #001623;
+    padding: 13px 17px 13px 17px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-start;
+    gap: 15px;
+    align-items: center;
+}
+
+.controlPanelContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.controlPanelCounterContainer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 6px;
+}
+
+.controlPanelCounterCurrent {
+    margin: 0;
+    padding: 0;
+    color: #FFF;
+    font-family: Lora;
+    font-size: 20.686px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.controlPanelCounterTotal {
+    margin: 0;
+    padding: 0;
+    color: #797979;
+    font-family: Lora;
+    font-size: 10.343px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.controlPanelButtonsContainer {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+}
+
+.controlPanelButton {
+    background-image: url('../../images/icons/icon_arro_navigate.svg');
+    border: none;
+    width: 19px;
+    height: 7px;
+    background-color: #ffffff00;
+    transition: opacity 0.3s ease-in-out;
+
+    &:hover {
+        opacity: 0.8;
+    }
+}
+
+.controlPanelButtonLeft {
+    transform: rotate(180deg);
+}
+
+.previewImagesContainer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 6px;
+}
+
+.previewImageContainer {
+    width: 61px;
+    height: 54px;
+    object-fit: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.previewImage {
+    width: 100%;
+    height: 100%;
+}
+
+.previewImageHide {
+    display: none;
+}

@@ -1,3 +1,8 @@
+import imagePreview from '../images/section_03_sample-kitchen_preview.png';
+import imageTest01 from '../images/section_03_sample-kitchen_t2.jpeg';
+import imageTest02 from '../images/section_03_sample-kitchen_t3.jpeg';
+import imageFull from '../images/section_03_sample-kitchen.png';
+
 export const DROPDOWN_LIST_PLANE = [
   {
     value: 'type01',
@@ -102,3 +107,82 @@ export const DROPDOWN_LIST_COLOR = [
       ),
     },
   ];
+
+export const  CATALOG_CARDS_DATA = [{
+    title: 'Кухня 097 минимализм',
+    subTitle: 'Угловая белая кухня со столешницей под бетон.',
+    priceEconomy: 168000,
+    priceStandard: 217000,
+    pricePremium: 270000,
+    length: 4900,
+    images: [
+      { preview: imagePreview, full: imageFull },
+      { preview: imagePreview, full: imageFull },
+      { preview: imageTest01, full: imageTest01 },
+      { preview: imageTest02, full: imageTest02 },
+      { preview: imagePreview, full: imageFull },
+      { preview: imagePreview, full: imageFull },
+      { preview: imagePreview, full: imageFull },
+      { preview: imagePreview, full: imageFull },
+      { preview: imagePreview, full: imageFull },
+      { preview: imagePreview, full: imageFull },
+    ],
+  },{
+    title: 'Кухня 097 минимализм',
+    subTitle: 'Угловая белая кухня со столешницей под бетон.',
+    priceEconomy: 168000,
+    priceStandard: 217000,
+    pricePremium: 270000,
+    length: 4900,
+    images: [
+      { preview: imagePreview, full: imageFull },
+      { preview: imagePreview, full: imageFull },
+      { preview: imageTest01, full: imageTest01 },
+      { preview: imageTest02, full: imageTest02 },
+      { preview: imagePreview, full: imageFull },
+      { preview: imagePreview, full: imageFull },
+      { preview: imagePreview, full: imageFull },
+      { preview: imagePreview, full: imageFull },
+      { preview: imagePreview, full: imageFull },
+      { preview: imagePreview, full: imageFull },
+    ],
+  },{
+    title: 'Кухня 097 минимализм',
+    subTitle: 'Угловая белая кухня со столешницей под бетон.',
+    priceEconomy: 168000,
+    priceStandard: 217000,
+    pricePremium: 270000,
+    length: 4900,
+    images: [
+      { preview: imagePreview, full: imageFull },
+      { preview: imagePreview, full: imageFull },
+      { preview: imageTest01, full: imageTest01 },
+      { preview: imageTest02, full: imageTest02 },
+      { preview: imagePreview, full: imageFull },
+      { preview: imagePreview, full: imageFull },
+      { preview: imagePreview, full: imageFull },
+      { preview: imagePreview, full: imageFull },
+      { preview: imagePreview, full: imageFull },
+      { preview: imagePreview, full: imageFull },
+    ],
+  },
+  {
+    title: 'Кухня 097 минимализм',
+    subTitle: 'Угловая белая кухня со столешницей под бетон.',
+    priceEconomy: 168000,
+    priceStandard: 217000,
+    pricePremium: 270000,
+    length: 4900,
+    images: [
+      { preview: imagePreview, full: imageFull },
+      { preview: imagePreview, full: imageFull },
+      { preview: imageTest01, full: imageTest01 },
+      { preview: imageTest02, full: imageTest02 },
+      { preview: imagePreview, full: imageFull },
+      { preview: imagePreview, full: imageFull },
+      { preview: imagePreview, full: imageFull },
+      { preview: imagePreview, full: imageFull },
+      { preview: imagePreview, full: imageFull },
+      { preview: imagePreview, full: imageFull },
+    ],
+  }]

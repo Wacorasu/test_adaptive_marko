@@ -3,15 +3,16 @@ import stylesButton from './button.module.scss';
 
 export const Button = ({
   handlerButtonClick,
-  type = 'dark',
+  typeStyle = 'dark',
   disabled = false,
+  type = 'button',
   modifiedStyle = '',
   children,
 }) => {
   const [style, setStyle] = useState('');
 
   useEffect(() => {
-    switch (type) {
+    switch (typeStyle) {
       case 'dark':
         setStyle(stylesButton.dark);
         break;
@@ -27,7 +28,8 @@ export const Button = ({
   }, []);
 
   return (
-    <button type='button'
+    <button
+      type={type}
       className={`${stylesButton.buttonMain} ${modifiedStyle} ${style} ${
         disabled ? stylesButton.disabled : ''
       }`}

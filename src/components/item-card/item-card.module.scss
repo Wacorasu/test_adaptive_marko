@@ -1,118 +1,137 @@
 .container {
     width: 100%;
-    max-width: 587px;
+    max-width: 785px;
+    position: relative;
+    z-index: 1;
 }
 
+.carousel {
+    position: absolute;
+    left: 0px;
+    top: 50%;
+    transform: translate(0, -50%);
 
-.fancyboxContainer {
+}
+
+.contentContainer {
+    margin-left: 198px;
     width: 100%;
-    height: 100%;
-    max-width: 287px;
-    max-height: 364px;
+    max-width: 588px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: center;
-}
-
-.carouselMainImageContainer {
-    width: 100%;
-    height: 100%;
-}
-
-.carouselMainImage {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.carouselPreviewContainer {
-    width: 100%;
-    max-height: 80px;
-    background-color: #001623;
-    padding: 13px 17px 13px 17px;
+    align-items: flex-start;
+    padding: 58px 48px 54px 133px;
     box-sizing: border-box;
+    background-color: #FBF6EF;
+    border: 1px solid #000;
+}
+
+.title {
+    color: #002B45;
+    font-family: Lora;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.8px;
+}
+
+.subtitle {
+    color: #002B45;
+    font-family: Open Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 48px;
+}
+
+.pricesContainer {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 24px;
 }
 
-.carouselControlPanelContainer {
+.priceContainer {
+    width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
 }
 
-.carouselControlPanelCounterContainer {
+.priceContainerEconomy {
+    align-self: flex-start;
+}
+
+.priceContainerStandard {
+    border-left: 1px solid #D9D9D9;
+    border-right: 1px solid #D9D9D9;
+    ;
+}
+
+.priceContainerPremium {
+    align-self: flex-end;
+}
+
+.priceName {
+    color: #002B45;
+    font-family: Open Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 15px;
+}
+
+.price {
+    color: #002B45;
+    font-family: Open Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.itemLength {
+    color: #7C7C7C;
+    font-family: Open Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 46px;
+}
+
+.itemLengthNumber {
+    color: #7C7C7C;
+    font-family: Open Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.buttonsContainer {
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    gap: 16px;
 }
 
-.carouselControlPanelCounterCurrent {
-    margin: 0;
-    padding: 0;
-    color: #FFF;
-    font-family: Lora;
-    font-size: 20.686px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+.buttonDetails {
+    width: 161px;
+    height: 58px;
 }
 
-.carouselControlPanelCounterTotal {
-    margin: 0;
-    padding: 0;
-    color: #797979;
-    font-family: Lora;
-    font-size: 10.343px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
-
-.carouselControlPanelButtonsContainer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.carouselControlPanelButton {
-    background-image: url('../../images/icons/icon_arro_navigate.svg');
-    border: none;
-    width: 19px;
-    height: 7px;
-    background-color: #ffffff00;
-}
-
-.carouselControlPanelButtonLeft {
-    transform: rotate(180deg);
-}
-
-.carouselPreviewImagesContainer {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    gap: 6px;
-}
-
-.carouselPreviewImageContainer {
-    max-width: 61px;
-    max-height: 54px;
-    object-fit: contain;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-}
-
-.carouselPreviewImage {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-}
-
-.carouselPreviewImageHide {
-    display: none;
+.buttonPrice {
+    height: 58px;
+    width: 229px;
 }

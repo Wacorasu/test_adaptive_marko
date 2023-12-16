@@ -2,7 +2,7 @@ import { ButtonDropdown } from '../../components/button-dropdown/button-dropdown
 import { Button } from '../../components/button/button';
 import { ItemCard } from '../../components/item-card/item-card';
 import { Pin } from '../../components/pin/pin';
-import { DROPDOWN_LIST_COLOR, DROPDOWN_LIST_PLANE, DROPDOWN_LIST_STYLE } from '../../servicec/constants';
+import { CATALOG_CARDS_DATA, DROPDOWN_LIST_COLOR, DROPDOWN_LIST_PLANE, DROPDOWN_LIST_STYLE } from '../../servicec/constants';
 import stylesHomePage from './home.module.scss';
 
 export const HomePage = () => {
@@ -28,7 +28,7 @@ export const HomePage = () => {
             Рассчитаем стоимость кухни-мечты
           </span>
           <Button
-            type='transparentWhite'
+            typeStyle='transparentWhite'
             modifiedStyle={stylesHomePage.introButton}
           >
             Заказать расчёт
@@ -104,13 +104,15 @@ export const HomePage = () => {
             <ButtonDropdown dropdownList={DROPDOWN_LIST_COLOR} modifiedStyleMain={stylesHomePage.catalogButtonColor}>цвет</ButtonDropdown>
           </form>
           <div className={stylesHomePage.catalogButtonsControlContainer}>
-            <Button type='transparentDark' disabled modifiedStyle={stylesHomePage.catalogButtonAccept}>применить</Button>
-            <Button type='transparentDark' modifiedStyle={stylesHomePage.catalogButtonDecline}>сбросить</Button>
+            <Button type='submit' typeStyle='transparentDark' disabled modifiedStyle={stylesHomePage.catalogButtonAccept}>применить</Button>
+            <Button typeStyle='transparentDark' modifiedStyle={stylesHomePage.catalogButtonDecline}>сбросить</Button>
           </div>
         </div>
         <div className={stylesHomePage.catalogProductsContainer}>
-            <ItemCard />
+            {CATALOG_CARDS_DATA?.length > 0 && CATALOG_CARDS_DATA.map((item, index)=><ItemCard dataCard={item} />) 
+            }
         </div>
+        <div className={stylesHomePage.catalogBackgroundDecor} />
       </section>
     </main>
   );

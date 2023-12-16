@@ -1,106 +1,61 @@
-import Fancybox from '../../servicec/funcybox';
 import stylesItemCard from './item-card.module.scss';
-import imagePreview from '../../images/section_03_sample-kitchen_preview.png';
-import imageFull from '../../images/section_03_sample-kitchen.png';
-import { useState } from 'react';
+import { PhotoCarousel } from '../photo-carousel/photo-carousel';
+import { Button } from '../button/button';
 
-const data = {
-  title: '',
-  subTitle: '',
-  priceEconomy: 168000,
-  priceStandard: 217000,
-  pricePremium: 270000,
-  length: 4900,
-  images: [
-    { preview: imagePreview, full: imageFull },
-    { preview: imagePreview, full: imageFull },
-    { preview: imagePreview, full: imageFull },
-    { preview: imagePreview, full: imageFull },
-    { preview: imagePreview, full: imageFull },
-    { preview: imagePreview, full: imageFull },
-    { preview: imagePreview, full: imageFull },
-    { preview: imagePreview, full: imageFull },
-    { preview: imagePreview, full: imageFull },
-    { preview: imagePreview, full: imageFull },
-  ],
-};
-
-export const ItemCard = () => {
-  const [pointer, setPointer] = useState(0);
-
+export const ItemCard = ({dataCard}) => {
   return (
     <article className={stylesItemCard.container}>
-      <Fancybox
-        options={{
-          Carousel: {
-            infinite: false,
-          },
-        }}
-        modifiedStyle={stylesItemCard.fancyboxContainer}
-      >
-        <div className={stylesItemCard.carouselMainImageContainer}>
-          <a data-fancybox='gallery' href={data?.images[pointer].full}>
-            <img
-              className={stylesItemCard.carouselMainImage}
-              alt={data?.title}
-              src={data?.images[pointer].preview}
-            />
-          </a>
-        </div>
-        <div className={stylesItemCard.carouselPreviewContainer}>
-          <div className={stylesItemCard.carouselControlPanelContainer}>
-            <div
-              className={stylesItemCard.carouselControlPanelCounterContainer}
+      <PhotoCarousel
+        images={dataCard.images}
+        alt={dataCard.title}
+        modifiedStyle={stylesItemCard.carousel}
+      />
+      <div className={stylesItemCard.contentContainer}>
+        <h3 className={stylesItemCard.title}>{dataCard.title}</h3>
+        <span className={stylesItemCard.subtitle}>{dataCard.subTitle}</span>
+        <ul className={stylesItemCard.pricesContainer}>
+          <li className={`${stylesItemCard.priceContainer}`}>
+            <span
+              className={`${stylesItemCard.priceName}  ${stylesItemCard.priceContainerEconomy}`}
             >
-              <span
-                className={stylesItemCard.carouselControlPanelCounterCurrent}
-              >
-                {pointer + 1}
-              </span>
-              <span className={stylesItemCard.carouselControlPanelCounterTotal}>
-                {data.images.length}
-              </span>
-            </div>
-            <div
-              className={stylesItemCard.carouselControlPanelButtonsContainer}
+              Эконом
+            </span>
+            <span
+              className={`${stylesItemCard.price}  ${stylesItemCard.priceContainerEconomy}`}
+            >{`${dataCard.priceEconomy} р.`}</span>
+          </li>
+          <li
+            className={`${stylesItemCard.priceContainer} ${stylesItemCard.priceContainerStandard}`}
+          >
+            <span className={stylesItemCard.priceName}>Стандарт</span>
+            <span
+              className={stylesItemCard.price}
+            >{`${dataCard.priceStandard} р.`}</span>
+          </li>
+          <li
+            className={`${stylesItemCard.priceContainer} ${stylesItemCard.priceContainerPremium}`}
+          >
+            <span
+              className={`${stylesItemCard.priceName} ${stylesItemCard.priceContainerPremium}`}
             >
-              <button
-                type='button'
-                className={`${stylesItemCard.carouselControlPanelButton} ${stylesItemCard.carouselControlPanelButtonLeft}`}
-              />
-              <button
-                type='button'
-                className={`${stylesItemCard.carouselControlPanelButton} ${stylesItemCard.carouselControlPanelButtonRight}`}
-              />
-            </div>
-          </div>
-          <div className={stylesItemCard.carouselPreviewImagesContainer}>
-            {data?.images.map((item, index) => {
-              if (index > 0) {
-                return (
-                  <a
-                    className={`${
-                      stylesItemCard.carouselPreviewImageContainer
-                    } ${
-                      index > pointer + 3
-                        ? stylesItemCard.carouselPreviewImageHide
-                        : ''
-                    }`}
-                    data-fancybox='gallery'
-                    href={item.full}
-                  >
-                    <img
-                      className={stylesItemCard.carouselPreviewImage}
-                      alt={data.title}
-                      src={item.preview}
-                    />
-                  </a>
-                );
-              } else return '';
-            })}
-          </div>
+              Премиум
+            </span>
+            <span
+              className={`${stylesItemCard.price} ${stylesItemCard.priceContainerPremium}`}
+            >{`${dataCard.pricePremium} р.`}</span>
+          </li>
+        </ul>
+        <span className={stylesItemCard.itemLength}>
+          Длина кухни:{' '}
+          <span className={stylesItemCard.itemLengthNumber}>
+            {dataCard.length} мм
+          </span>
+        </span>
+        <div className={stylesItemCard.buttonsContainer}>
+          <Button typeStyle='dark' modifiedStyle={stylesItemCard.buttonDetails}>Подробнее</Button>
+          <Button typeStyle='transparentDark' modifiedStyle={stylesItemCard.buttonPrice}>Расчет стоимости</Button>
         </div>
-      </Fancybox>
+      </div>
     </article>
   );
 };

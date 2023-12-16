@@ -304,6 +304,7 @@
 
 .catalogSection {
     width: 100%;
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -313,6 +314,18 @@
     padding: 158px 150px 100px 150px;
     box-sizing: border-box;
     overflow: hidden;
+}
+
+.catalogBackgroundDecor {
+    position: absolute;
+    z-index: 0;
+    right: 0;
+    width: 676px;
+    height: 415px;
+    background-color: #ffffff00;
+    border-top: 1px solid #002B45;
+    border-bottom: 1px solid #002B45;
+    border-left: 1px solid #002B45;
 }
 
 .catalogTitle {
@@ -346,6 +359,7 @@
     align-items: center;
     width: 100%;
     gap: 53px;
+    margin-bottom: 45px;
 }
 
 .catalogButtonsMenuContainer {
@@ -374,4 +388,13 @@
 .catalogButtonDecline {
     width: 148px;
     height: 58px;
+}
+
+.catalogProductsContainer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 33px;
+    flex-wrap: wrap;
 }
