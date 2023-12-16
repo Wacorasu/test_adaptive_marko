@@ -21,30 +21,31 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    padding: 58px 48px 54px 133px;
+    padding: 60px 49px 52px 133px;
     box-sizing: border-box;
     background-color: #FBF6EF;
     border: 1px solid #000;
 }
 
 .title {
+    margin: 0 0 18px 0;
+    padding: 0;
     color: #002B45;
-    font-family: Lora;
+    font-family: 'Lora';
     font-size: 24px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    letter-spacing: 0.8px;
 }
 
 .subtitle {
     color: #002B45;
-    font-family: Open Sans;
+    font-family: 'Open-Sans';
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    margin-bottom: 48px;
+    margin-bottom: 45px;
 }
 
 .pricesContainer {
@@ -55,7 +56,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 24px;
+    margin-bottom: 30px;
 }
 
 .priceContainer {
@@ -73,7 +74,8 @@
 .priceContainerStandard {
     border-left: 1px solid #D9D9D9;
     border-right: 1px solid #D9D9D9;
-    ;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 .priceContainerPremium {
@@ -82,17 +84,17 @@
 
 .priceName {
     color: #002B45;
-    font-family: Open Sans;
+    font-family: 'Open-Sans';
     font-size: 16px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    margin-bottom: 15px;
+    margin-bottom: 8px;
 }
 
 .price {
     color: #002B45;
-    font-family: Open Sans;
+    font-family: 'Open-Sans';
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -101,17 +103,17 @@
 
 .itemLength {
     color: #7C7C7C;
-    font-family: Open Sans;
+    font-family: 'Open-Sans';
     font-size: 16px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    margin-bottom: 46px;
+    margin-bottom: 45px;
 }
 
 .itemLengthNumber {
     color: #7C7C7C;
-    font-family: Open Sans;
+    font-family: 'Open-Sans';
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -129,9 +131,11 @@
 .buttonDetails {
     width: 161px;
     height: 58px;
+    font-size: 16px;
 }
 
 .buttonPrice {
     height: 58px;
     width: 229px;
+    font-size: 16px;
 }

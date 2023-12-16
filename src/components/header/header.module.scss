@@ -1,8 +1,9 @@
 .headerContainer {
     position: absolute;
+    margin: 0;
+    padding: 0;
     top: 0;
     width: 100%;
-    background-color: rgba(0, 43, 69, 0.90);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -10,9 +11,11 @@
 
 .contentContainer {
     width: 100%;
-    max-width: 1930px;
+    background-color: rgba(0, 43, 69, 0.90);
+    box-sizing: border-box;
+    max-width: 1920px;
     min-width: 360px;
-    padding: 36px 150px 36px 150px;
+    padding: 33px 150px 35px 150px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -49,6 +52,7 @@
     flex-direction: column;
     width: 100%;
     max-width: 231px;
+    gap: 5px;
     align-items: flex-start;
     justify-content: center;
 }
@@ -57,7 +61,7 @@
     margin: 0;
     padding: 0;
     color: #FFF;
-    font-family: Open Sans;
+    font-family: 'Open-Sans';
     font-size: 14px;
     font-style: normal;
     font-weight: 700;
@@ -68,7 +72,7 @@
     margin: 0;
     padding: 0;
     color: #FFF;
-    font-family: Open Sans;
+    font-family: 'Open-Sans';
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
@@ -117,10 +121,15 @@
     margin: 0;
     padding: 0;
     color: #FFF;
-    font-family: Open Sans;
+    font-family: 'Open-Sans';
     font-size: 20px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
     text-decoration: none;
+}
+
+.button {
+    width: 184px;
+    height: 49px;
 }

@@ -73,7 +73,7 @@ export const HomePage = () => {
                 Сжатые сроки
               </span>
               <span className={stylesHomePage.advantagesPointText}>
-                изготовление кухни от 20 дней
+                изготовление кухни <br/> от 20 дней
               </span>
             </div>
           </div>

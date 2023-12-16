@@ -111,10 +111,10 @@ export const DROPDOWN_LIST_COLOR = [
 export const  CATALOG_CARDS_DATA = [{
     title: 'Кухня 097 минимализм',
     subTitle: 'Угловая белая кухня со столешницей под бетон.',
-    priceEconomy: 168000,
-    priceStandard: 217000,
-    pricePremium: 270000,
-    length: 4900,
+    priceEconomy: '168 000',
+    priceStandard: '217 000',
+    pricePremium: '270 000',
+    length: '4900',
     images: [
       { preview: imagePreview, full: imageFull },
       { preview: imagePreview, full: imageFull },
@@ -130,10 +130,10 @@ export const  CATALOG_CARDS_DATA = [{
   },{
     title: 'Кухня 097 минимализм',
     subTitle: 'Угловая белая кухня со столешницей под бетон.',
-    priceEconomy: 168000,
-    priceStandard: 217000,
-    pricePremium: 270000,
-    length: 4900,
+    priceEconomy: '168 000',
+    priceStandard: '217 000',
+    pricePremium: '270 000',
+    length: '4900',
     images: [
       { preview: imagePreview, full: imageFull },
       { preview: imagePreview, full: imageFull },
@@ -149,10 +149,10 @@ export const  CATALOG_CARDS_DATA = [{
   },{
     title: 'Кухня 097 минимализм',
     subTitle: 'Угловая белая кухня со столешницей под бетон.',
-    priceEconomy: 168000,
-    priceStandard: 217000,
-    pricePremium: 270000,
-    length: 4900,
+    priceEconomy: '168 000',
+    priceStandard: '217 000',
+    pricePremium: '270 000',
+    length: '4900',
     images: [
       { preview: imagePreview, full: imageFull },
       { preview: imagePreview, full: imageFull },
@@ -169,10 +169,10 @@ export const  CATALOG_CARDS_DATA = [{
   {
     title: 'Кухня 097 минимализм',
     subTitle: 'Угловая белая кухня со столешницей под бетон.',
-    priceEconomy: 168000,
-    priceStandard: 217000,
-    pricePremium: 270000,
-    length: 4900,
+    priceEconomy: '168 000',
+    priceStandard: '217 000',
+    pricePremium: '270 000',
+    length: '4900',
     images: [
       { preview: imagePreview, full: imageFull },
       { preview: imagePreview, full: imageFull },

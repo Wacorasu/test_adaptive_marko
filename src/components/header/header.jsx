@@ -56,7 +56,7 @@ export const Header = () => {
           <a href='tel:+7(988)-311-77-88' className={stylesHeader.phoneNumber}>
             +7(988)-311-77-88
           </a>
-          <Button typeStyle='transparentWhite'>Заказать звонок</Button>
+          <Button typeStyle='transparentWhite' modifiedStyle={stylesHeader.button}>Заказать звонок</Button>
           </div>
         </div>
       </div>

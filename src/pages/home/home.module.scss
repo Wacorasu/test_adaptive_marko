@@ -1,6 +1,8 @@
 .contentContainer {
+    margin: 0;
+    padding: 0;
     width: 100%;
-    max-width: 1930px;
+    max-width: 1920px;
     min-width: 360px;
     display: flex;
     flex-direction: column;
@@ -16,33 +18,34 @@
     width: 100%;
     padding: 288px 150px 138px 150px;
     box-sizing: border-box;
+    position: relative;
+    z-index: -1;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
     background-image: url('../../images/section_01_background.png');
     background-size: cover;
-    background-position: 0;
+    background-position: 0 0;
     background-repeat: no-repeat;
 }
 
 .introTitle {
     max-width: 729px;
-    margin: 0 0 56px 0;
+    margin: 0 0 35px 0;
     padding: 0;
     color: #FFF;
-    font-family: Lora;
+    font-family: 'Lora';
     font-size: 64px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    letter-spacing: 0.8px;
     position: relative;
 
     &::after {
         position: absolute;
         content: '';
-        top: 50%;
+        top: 54%;
         left: -155px;
         width: 125px;
         height: 1px;
@@ -56,9 +59,9 @@
     width: 100%;
     display: flex;
     gap: 31px;
-    align-items: center;
+    align-items: flex-start;
     justify-content: flex-start;
-    margin-bottom: 56px;
+    margin-bottom: 60px;
 }
 
 .introSubtitleIcon {
@@ -72,10 +75,9 @@
 
 .introSubtitleTextContainer {
     width: 100%;
-    max-width: 325px;
+    max-width: 350px;
     display: flex;
     flex-direction: column;
-    gap: 10px;
     align-items: flex-start;
     justify-content: center;
 }
@@ -84,26 +86,24 @@
     margin: 0;
     padding: 0;
     color: #FFF;
-    font-family: 'Open Sans';
+    font-family: 'Open-Sans';
     font-size: 28px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
     text-align: left;
-    letter-spacing: 0.8px;
 }
 
 .introSubtitleText {
     margin: 0;
     padding: 0;
     color: #FFF;
-    font-family: 'Open Sans';
+    font-family: 'Open-Sans';
     font-size: 28px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     text-align: left;
-    letter-spacing: 0.8px;
 }
 
 .introButtonContainer {
@@ -114,37 +114,38 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    gap: 15px;
+    gap: 12px;
 }
 
 .introButtonLabel {
     color: #FFF;
     text-align: center;
-    font-family: Open Sans;
+    font-family: 'Open-Sans';
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    letter-spacing: 0.8px;
 }
 
 .introButton {
     width: 203px;
     height: 58px;
+    font-size: 16px;
+    letter-spacing: -0.16px;
 }
 
 .introButtonIcon {
     position: absolute;
-    right: -34px;
+    right: -40px;
     top: 8px;
-    bottom: 18px;
+    bottom: 15px;
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
-    max-width: 34px;
+    max-width: 38px;
     background-image: url('../../images/icons/icon_arrow.svg');
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
 }
 
@@ -200,12 +201,11 @@
     width: 100%;
     max-width: 382px;
     color: #002B45;
-    font-family: Lora;
+    font-family: 'Lora';
     font-size: 36px;
     font-style: normal;
     font-weight: 700;
     line-height: 120%;
-    letter-spacing: 0.8px;
 }
 
 .advantagesTitleDecor {
@@ -215,16 +215,18 @@
 
 .advantagesPointsContainer {
     width: 100%;
+    margin-left: 6px;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 75px;
 }
 
 .advantagesPointContainer {
-    width: 100%;
+    min-width: 365px;
     display: flex;
-    gap: 31px;
-    align-items: center;
+    gap: 30px;
+    align-items: flex-start;
     justify-content: flex-start;
 }
 
@@ -242,6 +244,7 @@
 
 .advantagesPointIconCalendar {
     background-image: url('../../images/icons/icon_calendar.svg');
+    background-position: 100%;
 }
 
 .advantagesPointIconProject {
@@ -250,10 +253,9 @@
 
 .advantagesPointTextContainer {
     width: 100%;
-    max-width: 250px;
+    max-width: 270px;
     display: flex;
     flex-direction: column;
-    gap: 5px;
     align-items: flex-start;
     justify-content: center;
 }
@@ -262,26 +264,24 @@
     margin: 0;
     padding: 0;
     color: #002B45;
-    font-family: 'Open Sans';
+    font-family: 'Open-Sans';
     font-size: 24px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
     text-align: left;
-    letter-spacing: 0.8px;
 }
 
 .advantagesPointText {
     margin: 0;
     padding: 0;
     color: #002B45;
-    font-family: 'Open Sans';
+    font-family: 'Open-Sans';
     font-size: 24px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     text-align: left;
-    letter-spacing: 0.8px;
 }
 
 .advantagesBackgroundImage {
@@ -320,6 +320,7 @@
     position: absolute;
     z-index: 0;
     right: 0;
+    top: 114px;
     width: 676px;
     height: 415px;
     background-color: #ffffff00;
@@ -329,14 +330,15 @@
 }
 
 .catalogTitle {
+    margin: 0;
+    padding: 0;
     width: 100%;
     color: #002B45;
-    font-family: Lora;
+    font-family: 'Lora';
     font-size: 36px;
     font-style: normal;
     font-weight: 700;
     line-height: 120%;
-    letter-spacing: 0.8px;
     position: relative;
     margin-bottom: 50px;
 
@@ -358,7 +360,7 @@
     justify-content: flex-start;
     align-items: center;
     width: 100%;
-    gap: 53px;
+    gap: 55px;
     margin-bottom: 45px;
 }
 
@@ -366,7 +368,7 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    gap: 14px;
+    gap: 11px;
 }
 
 .catalogButtonColor {
@@ -383,11 +385,13 @@
 .catalogButtonAccept {
     width: 165px;
     height: 58px;
+    font-size: 16px;
 }
 
 .catalogButtonDecline {
     width: 148px;
     height: 58px;
+    font-size: 16px;
 }
 
 .catalogProductsContainer {
@@ -395,6 +399,6 @@
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    gap: 33px;
+    gap: 48px;
     flex-wrap: wrap;
 }
