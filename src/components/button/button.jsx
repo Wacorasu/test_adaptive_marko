@@ -25,7 +25,7 @@ export const Button = ({
       default:
         break;
     }
-  }, []);
+  }, [typeStyle]);
 
   return (
     <button
