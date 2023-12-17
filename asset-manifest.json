@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/test_adaptive_marko/static/css/main.fe5d2a8f.css",
-    "main.js": "/test_adaptive_marko/static/js/main.2fba00a0.js",
+    "main.css": "/test_adaptive_marko/static/css/main.d41a0ce4.css",
+    "main.js": "/test_adaptive_marko/static/js/main.c9e5e3a1.js",
     "static/js/787.38d19b6f.chunk.js": "/test_adaptive_marko/static/js/787.38d19b6f.chunk.js",
     "static/media/Lora-Regular.ttf": "/test_adaptive_marko/static/media/Lora-Regular.d3cbc2c45690ac3703d2.ttf",
     "static/media/Lora-Bold.ttf": "/test_adaptive_marko/static/media/Lora-Bold.ea8e35d6420e18885a30.ttf",
@@ -12,6 +12,7 @@
     "static/media/section_01_background.webp": "/test_adaptive_marko/static/media/section_01_background.cd9ff17f458d84c059ea.webp",
     "static/media/section_03_sample-kitchen_t2.webp": "/test_adaptive_marko/static/media/section_03_sample-kitchen_t2.072b76401f3718003f2f.webp",
     "static/media/section_03_sample-kitchen.webp": "/test_adaptive_marko/static/media/section_03_sample-kitchen.fb7a3ff158d3397aff38.webp",
+    "static/media/section_01_background_small.webp": "/test_adaptive_marko/static/media/section_01_background_small.f065fa81a89f7de3658c.webp",
     "static/media/section_03_sample-kitchen_t2_small.webp": "/test_adaptive_marko/static/media/section_03_sample-kitchen_t2_small.a44949ab2154c862f81e.webp",
     "static/media/section_03_sample-kitchen_t3_small.webp": "/test_adaptive_marko/static/media/section_03_sample-kitchen_t3_small.49111b7b58e1e3b71b8a.webp",
     "static/media/logo.svg": "/test_adaptive_marko/static/media/logo.e7399e1ce094a16b0193837caf88e9be.svg",
@@ -27,12 +28,12 @@
     "index.html": "/test_adaptive_marko/index.html",
     "static/media/icon_arrow.svg": "/test_adaptive_marko/static/media/icon_arrow.75891058a4418e71dec8.svg",
     "static/media/icon_arro_navigate.svg": "/test_adaptive_marko/static/media/icon_arro_navigate.405255701a83a8d587e2.svg",
-    "main.fe5d2a8f.css.map": "/test_adaptive_marko/static/css/main.fe5d2a8f.css.map",
-    "main.2fba00a0.js.map": "/test_adaptive_marko/static/js/main.2fba00a0.js.map",
+    "main.d41a0ce4.css.map": "/test_adaptive_marko/static/css/main.d41a0ce4.css.map",
+    "main.c9e5e3a1.js.map": "/test_adaptive_marko/static/js/main.c9e5e3a1.js.map",
     "787.38d19b6f.chunk.js.map": "/test_adaptive_marko/static/js/787.38d19b6f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fe5d2a8f.css",
-    "static/js/main.2fba00a0.js"
+    "static/css/main.d41a0ce4.css",
+    "static/js/main.c9e5e3a1.js"
   ]
 }
