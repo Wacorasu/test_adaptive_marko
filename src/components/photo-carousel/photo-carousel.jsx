@@ -45,6 +45,7 @@ export const PhotoCarousel = ({ alt, images, modifiedStyle = '' }) => {
             type='button'
             className={`${stylesPhotoCarousel.controlPanelButton} ${stylesPhotoCarousel.controlPanelButtonLeft} ${stylesPhotoCarousel.controlPanelButtonLeftMobile}`}
             onClick={changeImagePrevious}
+            aria-label='button left'
           />
           <div className={stylesPhotoCarousel.controlPanelCounterContainer}>
             <span className={stylesPhotoCarousel.controlPanelCounterCurrent}>
@@ -59,11 +60,13 @@ export const PhotoCarousel = ({ alt, images, modifiedStyle = '' }) => {
               type='button'
               className={`${stylesPhotoCarousel.controlPanelButton} ${stylesPhotoCarousel.controlPanelButtonLeft}`}
               onClick={changeImagePrevious}
+              aria-label='button left'
             />
             <button
               type='button'
-              className={`${stylesPhotoCarousel.controlPanelButton} ${stylesPhotoCarousel.controlPanelButtonRight}`}
+              className={`${stylesPhotoCarousel.controlPanelButton}`}
               onClick={changeImageNext}
+              aria-label='button right'
             />
           </div>
         </div>
