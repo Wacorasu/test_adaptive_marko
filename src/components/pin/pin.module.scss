@@ -2,12 +2,12 @@
     max-width: 265px;
     background-color: rgba(0, 43, 69, 0.90);
     border-radius: 15px;
+    padding: 18px 32px 18px 32px;
+    box-sizing: border-box;
 }
 
 .content {
     width: 100%;
-    padding: 18px 32px 18px 32px;
-    box-sizing: border-box;
     position: relative;
 }
 
@@ -29,6 +29,7 @@
     width: 32px;
     height: 32px;
     position: absolute;
-    right: -16px;
-    top: calc(86px / 2 - 16px);
+    right: -48px;
+    top: 50%;
+    transform: translate(0, -50%);
 }

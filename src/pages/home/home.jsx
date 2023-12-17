@@ -2,7 +2,12 @@ import { ButtonDropdown } from '../../components/button-dropdown/button-dropdown
 import { Button } from '../../components/button/button';
 import { ItemCard } from '../../components/item-card/item-card';
 import { Pin } from '../../components/pin/pin';
-import { CATALOG_CARDS_DATA, DROPDOWN_LIST_COLOR, DROPDOWN_LIST_PLANE, DROPDOWN_LIST_STYLE } from '../../servicec/constants';
+import {
+  CATALOG_CARDS_DATA,
+  DROPDOWN_LIST_COLOR,
+  DROPDOWN_LIST_PLANE,
+  DROPDOWN_LIST_STYLE,
+} from '../../servicec/constants';
 import stylesHomePage from './home.module.scss';
 
 export const HomePage = () => {
@@ -35,14 +40,27 @@ export const HomePage = () => {
           </Button>
           <div className={stylesHomePage.introButtonIcon} />
         </div>
-        <Pin modifiedStyle={stylesHomePage.introPinTechnic}>
+        <Pin
+          modifiedStyleMain={stylesHomePage.introPinTechnic}
+          modifiedStyleIcon={stylesHomePage.introPinIcon}
+          modifiedStyleText={stylesHomePage.introPinText}
+        >
           Огромный выбор бытовой техники
         </Pin>
-        <Pin modifiedStyle={stylesHomePage.introPinGarniture}>
+        <Pin
+          modifiedStyleMain={stylesHomePage.introPinGarniture}
+          modifiedStyleIcon={stylesHomePage.introPinIcon}
+          modifiedStyleText={stylesHomePage.introPinText}
+        >
           Изысканный гарнитур любого размера
         </Pin>
-        <Pin modifiedStyle={stylesHomePage.introPinTable}>
-          Выдающиеся сорта древесины
+        <Pin
+          modifiedStyleMain={stylesHomePage.introPinTable}
+          modifiedStyleIcon={stylesHomePage.introPinIcon}
+          modifiedStyleText={stylesHomePage.introPinText}
+        >
+          Выдающиеся <br />
+          сорта древесины
         </Pin>
       </section>
       <section className={stylesHomePage.advantagesSection}>
@@ -60,7 +78,7 @@ export const HomePage = () => {
                 C 2000 г на рынке
               </span>
               <span className={stylesHomePage.advantagesPointText}>
-                наши кухни выбрали 10 000+ семей
+                наши кухни выбрали 10&nbsp;000+ семей
               </span>
             </div>
           </div>
@@ -73,7 +91,7 @@ export const HomePage = () => {
                 Сжатые сроки
               </span>
               <span className={stylesHomePage.advantagesPointText}>
-                изготовление кухни <br/> от 20 дней
+                изготовление кухни <br /> от 20 дней
               </span>
             </div>
           </div>
@@ -97,20 +115,59 @@ export const HomePage = () => {
         <h2 className={stylesHomePage.catalogTitle}>Посмотрите наши работы</h2>
         <div className={stylesHomePage.catalogButtonsContainer}>
           <form className={stylesHomePage.catalogButtonsMenuContainer}>
-            <ButtonDropdown dropdownList={DROPDOWN_LIST_PLANE}>
+            <ButtonDropdown
+              dropdownList={DROPDOWN_LIST_PLANE}
+              modifiedStyleIcon={stylesHomePage.catalogButtonIcon}
+              modifiedStyleIconOpen={stylesHomePage.catalogButtonIconOpen}
+              modifiedStyleMain={stylesHomePage.catalogButtonPlane}
+              modifiedStyleText={stylesHomePage.catalogButtonText}
+              modifiedStyleListContainer={stylesHomePage.catalogListContainer}
+            >
               планировка
             </ButtonDropdown>
-            <ButtonDropdown dropdownList={DROPDOWN_LIST_STYLE}>стиль кухни</ButtonDropdown>
-            <ButtonDropdown dropdownList={DROPDOWN_LIST_COLOR} modifiedStyleMain={stylesHomePage.catalogButtonColor}>цвет</ButtonDropdown>
+            <ButtonDropdown
+              dropdownList={DROPDOWN_LIST_STYLE}
+              modifiedStyleIcon={stylesHomePage.catalogButtonIcon}
+              modifiedStyleIconOpen={stylesHomePage.catalogButtonIconOpen}
+              modifiedStyleMain={stylesHomePage.catalogButtonStyle}
+              modifiedStyleText={stylesHomePage.catalogButtonText}
+              modifiedStyleListContainer={stylesHomePage.catalogListContainer}
+            >
+              стиль кухни
+            </ButtonDropdown>
+            <ButtonDropdown
+              dropdownList={DROPDOWN_LIST_COLOR}
+              modifiedStyleIcon={stylesHomePage.catalogButtonIcon}
+              modifiedStyleIconOpen={stylesHomePage.catalogButtonIconOpen}
+              modifiedStyleMain={stylesHomePage.catalogButtonColor}
+              modifiedStyleText={stylesHomePage.catalogButtonText}
+              modifiedStyleListContainer={stylesHomePage.catalogListContainer}
+            >
+              цвет
+            </ButtonDropdown>
           </form>
           <div className={stylesHomePage.catalogButtonsControlContainer}>
-            <Button type='submit' typeStyle='transparentDark' disabled modifiedStyle={stylesHomePage.catalogButtonAccept}>применить</Button>
-            <Button typeStyle='transparentDark' modifiedStyle={stylesHomePage.catalogButtonDecline}>сбросить</Button>
+            <Button
+              type='submit'
+              typeStyle='transparentDark'
+              disabled
+              modifiedStyle={stylesHomePage.catalogButtonAccept}
+            >
+              применить
+            </Button>
+            <Button
+              typeStyle='transparentDark'
+              modifiedStyle={stylesHomePage.catalogButtonDecline}
+            >
+              сбросить
+            </Button>
           </div>
         </div>
         <div className={stylesHomePage.catalogProductsContainer}>
-            {CATALOG_CARDS_DATA?.length > 0 && CATALOG_CARDS_DATA.map((item, index)=><ItemCard dataCard={item} />) 
-            }
+          {CATALOG_CARDS_DATA?.length > 0 &&
+            CATALOG_CARDS_DATA.map((item, index) => (
+              <ItemCard key={index} dataCard={item} />
+            ))}
         </div>
         <div className={stylesHomePage.catalogBackgroundDecor} />
       </section>

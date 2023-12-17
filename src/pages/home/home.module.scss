@@ -1,4 +1,5 @@
 .contentContainer {
+    z-index: 0;
     margin: 0;
     padding: 0;
     width: 100%;
@@ -8,6 +9,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
+    overflow: hidden;
 }
 
 
@@ -16,6 +18,7 @@
 
 .intoSection {
     width: 100%;
+    max-width: 1720;
     padding: 288px 150px 138px 150px;
     box-sizing: border-box;
     position: relative;
@@ -28,6 +31,22 @@
     background-size: cover;
     background-position: 0 0;
     background-repeat: no-repeat;
+
+    @media screen and (max-width: 1280px) {
+        padding: 288px 50px 45px 100px;
+    }
+
+    @media screen and (max-width: 960px) {
+        padding: 288px 0 40px 50px;
+    }
+
+    @media screen and (max-width: 690px) {
+        padding: 120px 0 40px 40px;
+    }
+
+    @media screen and (max-width: 520px) {
+        padding: 160px 0 40px 30px;
+    }
 }
 
 .introTitle {
@@ -52,6 +71,26 @@
         z-index: 1;
         background-color: #fff;
 
+        @media screen and (max-width: 960px) {
+            left: -135px;
+            width: 125px;
+        }
+    }
+
+    @media screen and (max-width: 1280px) {
+        font-size: 44px;
+    }
+
+    @media screen and (max-width: 960px) {
+        font-size: 36px;
+        max-width: 429px;
+        margin-bottom: 25px;
+    }
+
+    @media screen and (max-width: 690px) {
+        font-size: 26px;
+        max-width: 429px;
+        margin-bottom: 25px;
     }
 }
 
@@ -62,6 +101,20 @@
     align-items: flex-start;
     justify-content: flex-start;
     margin-bottom: 60px;
+
+    @media screen and (max-width: 1280px) {
+        margin-bottom: 40px;
+    }
+
+    @media screen and (max-width: 960px) {
+        margin-bottom: 20px;
+        gap: 15px;
+    }
+
+    @media screen and (max-width: 690px) {
+        margin-bottom: 230px;
+        gap: 15px;
+    }
 }
 
 .introSubtitleIcon {
@@ -71,6 +124,14 @@
     background-image: url('../../images/icons/icon_wallet.svg');
     background-size: contain;
     background-repeat: no-repeat;
+
+    @media screen and (max-width: 1280px) {
+        max-width: 50px;
+    }
+
+    @media screen and (max-width: 960px) {
+        max-width: 40px;
+    }
 }
 
 .introSubtitleTextContainer {
@@ -92,6 +153,14 @@
     font-weight: 700;
     line-height: normal;
     text-align: left;
+
+    @media screen and (max-width: 1280px) {
+        font-size: 22px;
+    }
+
+    @media screen and (max-width: 1280px) {
+        font-size: 16px;
+    }
 }
 
 .introSubtitleText {
@@ -104,6 +173,14 @@
     font-weight: 400;
     line-height: normal;
     text-align: left;
+
+    @media screen and (max-width: 1280px) {
+        font-size: 22px;
+    }
+
+    @media screen and (max-width: 1280px) {
+        font-size: 16px;
+    }
 }
 
 .introButtonContainer {
@@ -132,6 +209,16 @@
     height: 58px;
     font-size: 16px;
     letter-spacing: -0.16px;
+
+    @media screen and (max-width: 1280px) {
+        width: 180px;
+        height: 50px;
+        font-size: 14px;
+    }
+
+    @media screen and (max-width: 960px) {
+        height: 40px;
+    }
 }
 
 .introButtonIcon {
@@ -147,6 +234,36 @@
     background-image: url('../../images/icons/icon_arrow.svg');
     background-size: contain;
     background-repeat: no-repeat;
+
+    @media screen and (max-width: 1280px) {
+        top: 12px;
+    }
+}
+
+.introPinText {
+    @media screen and (max-width: 960px) {
+        line-height: 15px;
+        font-size: 14px;
+    }
+
+    @media screen and (max-width: 690px) {
+        text-align: right;
+    }
+}
+
+.introPinIcon {
+    @media screen and (max-width: 960px) {
+        right: -30px;
+        width: 26px;
+        height: 26px;
+    }
+
+    @media screen and (max-width: 690px) {
+        right: none;
+        left: -40px;
+        width: 26px;
+        height: 26px;
+    }
 }
 
 .introPinTechnic {
@@ -154,12 +271,59 @@
     position: absolute;
     top: 178px;
     left: 546px;
+
+    @media screen and (max-width: 1280px) {
+        top: 148px;
+        left: 346px;
+    }
+
+    @media screen and (max-width: 960px) {
+        top: 120px;
+        left: 300px;
+        max-width: 180px;
+        padding: 9px 16px 9px 16px;
+    }
+
+    @media screen and (max-width: 690px) {
+        padding: 9px 8px 9px 32px;
+        top: 280px;
+        left: 50px;
+    }
+
+    @media screen and (max-width: 520px) {
+        top: 320px;
+        left: 40px;
+    }
 }
 
 .introPinGarniture {
     position: absolute;
     top: 329px;
     left: 959px;
+
+    @media screen and (max-width: 1280px) {
+        top: 240px;
+        left: 659px;
+    }
+
+    @media screen and (max-width: 960px) {
+        top: 230px;
+        left: 380px;
+        max-width: 200px;
+        padding: 9px 16px 9px 16px;
+    }
+
+    @media screen and (max-width: 690px) {
+        padding: 9px 8px 9px 32px;
+        top: 345px;
+        left: 50px;
+    }
+
+    @media screen and (max-width: 520px) {
+        padding: 9px 8px 9px 32px;
+        top: 385px;
+        left: 40px;
+    }
 }
 
 .introPinTable {
@@ -167,6 +331,29 @@
     position: absolute;
     top: 529px;
     left: 891px;
+
+    @media screen and (max-width: 1280px) {
+        top: 370px;
+        left: 600px;
+    }
+
+    @media screen and (max-width: 960px) {
+        top: 330px;
+        left: 500px;
+        max-width: 200px;
+        padding: 9px 16px 9px 16px;
+    }
+
+    @media screen and (max-width: 690px) {
+        padding: 9px 8px 9px 32px;
+        top: 410px;
+        left: 50px;
+    }
+
+    @media screen and (max-width: 520px) {
+        top: 450px;
+        left: 40px;
+    }
 }
 
 
@@ -178,12 +365,75 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: center;
+    align-items: flex-start;
     background-color: #FBF6EF;
     position: relative;
     padding: 101px 0 105px 515px;
     padding-left: 515px;
     box-sizing: border-box;
+
+    @media screen and (max-width: 1680px) {
+        padding: 50px 0 50px 350px;
+    }
+
+    @media screen and (max-width: 1280px) {
+        padding: 25px 0 25px 150px;
+    }
+
+    @media screen and (max-width: 960px) {
+        padding: 10px 0 10px 100px;
+    }
+
+    @media screen and (max-width: 520px) {
+        padding: 10px 0 10px 80px;
+    }
+}
+
+.advantagesBackgroundImage {
+    width: 100%;
+    height: 150%;
+    z-index: 1;
+    max-height: 532px;
+    max-width: 420px;
+    background-image: url('../../images/section_02_background.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0;
+    top: -38px;
+
+    @media screen and (max-width: 1680px) {
+        max-width: 300px;
+        max-height: 412px;
+    }
+
+    @media screen and (max-width: 1280px) {
+        top: -20px;
+        left: -60px;
+        max-width: 200px;
+        max-height: 256px;
+    }
+
+    @media screen and (max-width: 960px) {
+        top: -20px;
+        left: -80px;
+        max-width: 180px;
+        max-height: 216px;
+    }
+
+    @media screen and (max-width: 690px) {
+        top: -15px;
+        left: -170px;
+        max-width: 255px;
+        max-height: 520px;
+    }
+
+    @media screen and (max-width: 520px) {
+        top: -15px;
+        left: -215px;
+        max-width: 280px;
+        max-height: 600px;
+    }
 }
 
 .advantagesTitleContainer {
@@ -193,6 +443,19 @@
     justify-content: flex-start;
     align-items: center;
     margin-bottom: 56px;
+
+    @media screen and (max-width: 1680px) {
+        margin-bottom: 36px;
+    }
+
+    @media screen and (max-width: 1280px) {
+        margin-bottom: 20px;
+    }
+
+    @media screen and (max-width: 960px) {
+        margin-bottom: 15px;
+        gap: 15px;
+    }
 }
 
 .advantagesTitle {
@@ -206,20 +469,46 @@
     font-style: normal;
     font-weight: 700;
     line-height: 120%;
+
+    @media screen and (max-width: 1280px) {
+        max-width: 282px;
+        font-size: 26px;
+    }
+
+    @media screen and (max-width: 960px) {
+        max-width: 262px;
+        font-size: 24px;
+    }
 }
 
 .advantagesTitleDecor {
     width: 100%;
     border-bottom: 1px solid #002B45;
+
+    @media screen and (max-width: 690px) {
+        max-width: 150px;
+    }
 }
 
 .advantagesPointsContainer {
     width: 100%;
+    max-width: 1295px;
     margin-left: 6px;
+    padding-right: 50px;
+    box-sizing: border-box;
     display: flex;
     align-items: flex-start;
-    justify-content: flex-start;
-    gap: 75px;
+    justify-content: space-between;
+    gap: 10px;
+
+    @media screen and (max-width: 960px) {
+        gap: 5px;
+    }
+
+    @media screen and (max-width: 690px) {
+        flex-direction: column;
+        gap: 15px;
+    }
 }
 
 .advantagesPointContainer {
@@ -228,6 +517,31 @@
     gap: 30px;
     align-items: flex-start;
     justify-content: flex-start;
+
+    @media screen and (max-width: 1680px) {
+        gap: 20px;
+        min-width: 300px;
+    }
+
+    @media screen and (max-width: 1280px) {
+        gap: 10px;
+        min-width: 230px;
+    }
+
+    @media screen and (max-width: 960px) {
+        gap: 5px;
+        min-width: 200px;
+    }
+
+    @media screen and (max-width: 690px) {
+        gap: 15px;
+        min-width: 250px;
+    }
+
+    @media screen and (max-width: 520px) {
+        gap: 15px;
+        min-width: 260px;
+    }
 }
 
 .advantagesPointIcon {
@@ -236,6 +550,14 @@
     aspect-ratio: 1;
     background-size: contain;
     background-repeat: no-repeat;
+
+    @media screen and (max-width: 1680px) {
+        max-width: 50px;
+    }
+
+    @media screen and (max-width: 1280px) {
+        max-width: 35px;
+    }
 }
 
 .advantagesPointIconKitchen {
@@ -270,6 +592,14 @@
     font-weight: 700;
     line-height: normal;
     text-align: left;
+
+    @media screen and (max-width: 1680px) {
+        font-size: 20px;
+    }
+
+    @media screen and (max-width: 1280px) {
+        font-size: 16px;
+    }
 }
 
 .advantagesPointText {
@@ -282,21 +612,16 @@
     font-weight: 400;
     line-height: normal;
     text-align: left;
+
+    @media screen and (max-width: 1680px) {
+        font-size: 20px;
+    }
+
+    @media screen and (max-width: 1280px) {
+        font-size: 16px;
+    }
 }
 
-.advantagesBackgroundImage {
-    width: 100%;
-    height: 150%;
-    z-index: 1;
-    max-height: 532px;
-    max-width: 420px;
-    background-image: url('../../images/section_02_background.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    position: absolute;
-    left: 0;
-    top: -38px;
-}
 
 
 // Стили Третьей секции
@@ -304,6 +629,8 @@
 
 .catalogSection {
     width: 100%;
+    max-width: 1720px;
+    z-index: 0;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -311,15 +638,31 @@
     align-items: center;
     background-color: #fff;
     position: relative;
-    padding: 158px 150px 100px 150px;
+    padding: 158px 50px 100px 50px;
     box-sizing: border-box;
-    overflow: hidden;
+
+    @media screen and (max-width: 1680px) {
+        padding-top: 150px;
+    }
+
+    @media screen and (max-width: 1280px) {
+        padding-top: 80px;
+    }
+
+    @media screen and (max-width: 960px) {
+        padding: 40px 20px 100px 20px;
+    }
+
+    @media screen and (max-width: 520px) {
+        padding: 25px 10px 20px 20px;
+    }
+
 }
 
 .catalogBackgroundDecor {
     position: absolute;
-    z-index: 0;
-    right: 0;
+    z-index: -1;
+    right: -100px;
     top: 114px;
     width: 676px;
     height: 415px;
@@ -327,6 +670,27 @@
     border-top: 1px solid #002B45;
     border-bottom: 1px solid #002B45;
     border-left: 1px solid #002B45;
+
+    @media screen and (max-width: 1680px) {
+        width: 476px;
+        height: 315px;
+    }
+
+    @media screen and (max-width: 1280px) {
+        width: 376px;
+        height: 215px;
+    }
+
+    @media screen and (max-width: 960px) {
+        width: 200px;
+        height: 150px;
+    }
+
+    @media screen and (max-width: 520px) {
+        top: 60px;
+        width: 180px;
+        height: 150px;
+    }
 }
 
 .catalogTitle {
@@ -352,6 +716,19 @@
         z-index: 1;
         background-color: #002B45;
 
+        @media screen and (max-width: 960px) {
+            left: -135px;
+        }
+    }
+
+    @media screen and (max-width: 1280px) {
+        font-size: 26px;
+        margin-bottom: 30px;
+    }
+
+    @media screen and (max-width: 960px) {
+        font-size: 24px;
+        margin-bottom: 15px;
     }
 }
 
@@ -362,6 +739,21 @@
     width: 100%;
     gap: 55px;
     margin-bottom: 45px;
+
+    @media screen and (max-width: 1280px) {
+        gap: 35px;
+        margin-bottom: 25px;
+    }
+
+    @media screen and (max-width: 960px) {
+        gap: 15px;
+        margin-bottom: 25px;
+    }
+
+    @media screen and (max-width: 690px) {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 }
 
 .catalogButtonsMenuContainer {
@@ -369,10 +761,87 @@
     justify-content: flex-start;
     align-items: center;
     gap: 11px;
+
+    @media screen and (max-width: 960px) {
+        gap: 5px;
+    }
+
+    @media screen and (max-width: 520px) {
+        flex-wrap: wrap;
+    }
+}
+
+.catalogButtonIcon {
+    @media screen and (max-width: 960px) {
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        border-top: 7px solid #002B45;
+        border-bottom: none;
+    }
+}
+
+.catalogButtonIconOpen {
+    @media screen and (max-width: 960px) {
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        border-bottom: 7px solid #fff;
+        border-top: none;
+    }
+}
+
+.catalogListContainer {
+    @media screen and (max-width: 960px) {
+        margin: 10px 0 0 0;
+        padding: 9px 0 9px 10px;
+        gap: 10px;
+        right: -50px;
+    }
+}
+
+
+.catalogButtonText {
+    @media screen and (max-width: 960px) {
+        font-size: 14px;
+    }
 }
 
 .catalogButtonColor {
     width: 137px;
+
+    @media screen and (max-width: 1280px) {
+        width: 137px;
+        height: 48px;
+    }
+
+    @media screen and (max-width: 960px) {
+        width: 100px;
+        height: 40px;
+    }
+}
+
+.catalogButtonPlane {
+    @media screen and (max-width: 1280px) {
+        width: 180px;
+        height: 48px;
+    }
+
+    @media screen and (max-width: 960px) {
+        width: 150px;
+        height: 40px;
+    }
+}
+
+
+.catalogButtonStyle {
+    @media screen and (max-width: 1280px) {
+        width: 180px;
+        height: 48px;
+    }
+
+    @media screen and (max-width: 960px) {
+        width: 150px;
+        height: 40px;
+    }
 }
 
 .catalogButtonsControlContainer {
@@ -380,25 +849,62 @@
     justify-content: flex-start;
     align-items: center;
     gap: 11px;
+
+    @media screen and (max-width: 960px) {
+        gap: 5px;
+    }
 }
 
 .catalogButtonAccept {
     width: 165px;
     height: 58px;
     font-size: 16px;
+
+    @media screen and (max-width: 1280px) {
+        width: 135px;
+        height: 48px;
+    }
+
+    @media screen and (max-width: 960px) {
+        width: 115px;
+        height: 40px;
+        font-size: 14px;
+    }
 }
 
 .catalogButtonDecline {
     width: 148px;
     height: 58px;
     font-size: 16px;
+    background-color: #FFF;
+
+    @media screen and (max-width: 1280px) {
+        width: 135px;
+        height: 48px;
+    }
+
+    @media screen and (max-width: 960px) {
+        width: 115px;
+        height: 40px;
+        font-size: 14px;
+    }
 }
 
 .catalogProductsContainer {
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
-    gap: 48px;
+    justify-content: space-between;
+    column-gap: 5px;
+    row-gap: 48px;
     flex-wrap: wrap;
+
+    @media screen and (max-width: 1680px) {
+        justify-content: center;
+    }
+
+    @media screen and (max-width: 960px) {
+        row-gap: 20px
+    }
+
 }

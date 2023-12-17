@@ -41,6 +41,11 @@ export const PhotoCarousel = ({ alt, images, modifiedStyle = '' }) => {
 
       <div className={stylesPhotoCarousel.previewContainer}>
         <div className={stylesPhotoCarousel.controlPanelContainer}>
+          <button
+            type='button'
+            className={`${stylesPhotoCarousel.controlPanelButton} ${stylesPhotoCarousel.controlPanelButtonLeft} ${stylesPhotoCarousel.controlPanelButtonLeftMobile}`}
+            onClick={changeImagePrevious}
+          />
           <div className={stylesPhotoCarousel.controlPanelCounterContainer}>
             <span className={stylesPhotoCarousel.controlPanelCounterCurrent}>
               {pointer < 9 ? `0${pointer + 1}` : pointer + 1}
@@ -67,6 +72,7 @@ export const PhotoCarousel = ({ alt, images, modifiedStyle = '' }) => {
             if (pointer === images.length - 1) {
               return (
                 <a
+                  key={index}
                   className={`${stylesPhotoCarousel.previewImageContainer} ${
                     index > PHOTO_CAROUSEL_PREVIEW_LENGTH - 1
                       ? stylesPhotoCarousel.previewImageHide
@@ -85,6 +91,7 @@ export const PhotoCarousel = ({ alt, images, modifiedStyle = '' }) => {
             } else if (index !== pointer) {
               return (
                 <a
+                  key={index}
                   className={`${stylesPhotoCarousel.previewImageContainer} ${
                     index > pointer + PHOTO_CAROUSEL_PREVIEW_LENGTH ||
                     index < pointer
