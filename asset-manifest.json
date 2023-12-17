@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Wacorasu/test_adaptive_marko/static/css/main.2c097590.css",
-    "main.js": "/Wacorasu/test_adaptive_marko/static/js/main.586381a3.js",
+    "main.css": "/Wacorasu/test_adaptive_marko/static/css/main.d83a2388.css",
+    "main.js": "/Wacorasu/test_adaptive_marko/static/js/main.9daf8c4a.js",
     "static/js/787.38d19b6f.chunk.js": "/Wacorasu/test_adaptive_marko/static/js/787.38d19b6f.chunk.js",
     "static/media/section_01_background.png": "/Wacorasu/test_adaptive_marko/static/media/section_01_background.6931d59bb864e26b1e0c.png",
     "static/media/section_03_sample-kitchen.png": "/Wacorasu/test_adaptive_marko/static/media/section_03_sample-kitchen.5f8647a01ba4a031d391.png",
@@ -25,12 +25,12 @@
     "index.html": "/Wacorasu/test_adaptive_marko/index.html",
     "static/media/icon_arrow.svg": "/Wacorasu/test_adaptive_marko/static/media/icon_arrow.75891058a4418e71dec8.svg",
     "static/media/icon_arro_navigate.svg": "/Wacorasu/test_adaptive_marko/static/media/icon_arro_navigate.405255701a83a8d587e2.svg",
-    "main.2c097590.css.map": "/Wacorasu/test_adaptive_marko/static/css/main.2c097590.css.map",
-    "main.586381a3.js.map": "/Wacorasu/test_adaptive_marko/static/js/main.586381a3.js.map",
+    "main.d83a2388.css.map": "/Wacorasu/test_adaptive_marko/static/css/main.d83a2388.css.map",
+    "main.9daf8c4a.js.map": "/Wacorasu/test_adaptive_marko/static/js/main.9daf8c4a.js.map",
     "787.38d19b6f.chunk.js.map": "/Wacorasu/test_adaptive_marko/static/js/787.38d19b6f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2c097590.css",
-    "static/js/main.586381a3.js"
+    "static/css/main.d83a2388.css",
+    "static/js/main.9daf8c4a.js"
   ]
 }
