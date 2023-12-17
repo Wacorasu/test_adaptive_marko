@@ -1,21 +1,23 @@
 {
   "files": {
-    "main.css": "/test_adaptive_marko/static/css/main.612c7797.css",
-    "main.js": "/test_adaptive_marko/static/js/main.383f507b.js",
+    "main.css": "/test_adaptive_marko/static/css/main.fe5d2a8f.css",
+    "main.js": "/test_adaptive_marko/static/js/main.2fba00a0.js",
     "static/js/787.38d19b6f.chunk.js": "/test_adaptive_marko/static/js/787.38d19b6f.chunk.js",
-    "static/media/section_01_background.png": "/test_adaptive_marko/static/media/section_01_background.c607a68f75be0843460f.png",
-    "static/media/section_03_sample-kitchen.png": "/test_adaptive_marko/static/media/section_03_sample-kitchen.fd348f296da1e9a08558.png",
     "static/media/Lora-Regular.ttf": "/test_adaptive_marko/static/media/Lora-Regular.d3cbc2c45690ac3703d2.ttf",
     "static/media/Lora-Bold.ttf": "/test_adaptive_marko/static/media/Lora-Bold.ea8e35d6420e18885a30.ttf",
     "static/media/OpenSans-Bold.ttf": "/test_adaptive_marko/static/media/OpenSans-Bold.c790f99966352c531503.ttf",
     "static/media/OpenSans-Regular.ttf": "/test_adaptive_marko/static/media/OpenSans-Regular.b8cc747a58ffa52b7ff9.ttf",
-    "static/media/section_03_sample-kitchen_t3.jpg": "/test_adaptive_marko/static/media/section_03_sample-kitchen_t3.6a9e01d7ec33346d17ec.jpg",
-    "static/media/logo_yandex-map.svg": "/test_adaptive_marko/static/media/logo_yandex-map.f7dca56debc0f4183df047f4b7e0b13e.svg",
-    "static/media/section_03_sample-kitchen_t2.jpg": "/test_adaptive_marko/static/media/section_03_sample-kitchen_t2.dfadd7633eae9a75d674.jpg",
-    "static/media/section_02_background.png": "/test_adaptive_marko/static/media/section_02_background.837eab40248d61dd61da.png",
-    "static/media/section_03_sample-kitchen_preview.png": "/test_adaptive_marko/static/media/section_03_sample-kitchen_preview.0f807bbd9562dd5a0e76.png",
+    "static/media/logo_yandex-map.svg": "/test_adaptive_marko/static/media/logo_yandex-map.76fe1b37ca92c98f5d943eb3ada9b79f.svg",
+    "static/media/section_03_sample-kitchen_t3.webp": "/test_adaptive_marko/static/media/section_03_sample-kitchen_t3.36b78cb0a26389d8abb5.webp",
+    "static/media/section_01_background.webp": "/test_adaptive_marko/static/media/section_01_background.cd9ff17f458d84c059ea.webp",
+    "static/media/section_03_sample-kitchen_t2.webp": "/test_adaptive_marko/static/media/section_03_sample-kitchen_t2.072b76401f3718003f2f.webp",
+    "static/media/section_03_sample-kitchen.webp": "/test_adaptive_marko/static/media/section_03_sample-kitchen.fb7a3ff158d3397aff38.webp",
+    "static/media/section_03_sample-kitchen_t2_small.webp": "/test_adaptive_marko/static/media/section_03_sample-kitchen_t2_small.a44949ab2154c862f81e.webp",
+    "static/media/section_03_sample-kitchen_t3_small.webp": "/test_adaptive_marko/static/media/section_03_sample-kitchen_t3_small.49111b7b58e1e3b71b8a.webp",
     "static/media/logo.svg": "/test_adaptive_marko/static/media/logo.e7399e1ce094a16b0193837caf88e9be.svg",
+    "static/media/section_02_background.webp": "/test_adaptive_marko/static/media/section_02_background.7a132d778be61cc65948.webp",
     "static/media/icon_project.svg": "/test_adaptive_marko/static/media/icon_project.4481b5cd0d423bbd802a.svg",
+    "static/media/section_03_sample-kitchen_previe.webp": "/test_adaptive_marko/static/media/section_03_sample-kitchen_previe.277d7055ff4d340a0d6f.webp",
     "static/media/icon_kitchen.svg": "/test_adaptive_marko/static/media/icon_kitchen.7758965c420fcdbfbac9.svg",
     "static/media/icon_wallet.svg": "/test_adaptive_marko/static/media/icon_wallet.f5de441fd1e6f8c09ee7.svg",
     "static/media/icon_calendar.svg": "/test_adaptive_marko/static/media/icon_calendar.ed35ed370bdaf3afa7a3.svg",
@@ -25,12 +27,12 @@
     "index.html": "/test_adaptive_marko/index.html",
     "static/media/icon_arrow.svg": "/test_adaptive_marko/static/media/icon_arrow.75891058a4418e71dec8.svg",
     "static/media/icon_arro_navigate.svg": "/test_adaptive_marko/static/media/icon_arro_navigate.405255701a83a8d587e2.svg",
-    "main.612c7797.css.map": "/test_adaptive_marko/static/css/main.612c7797.css.map",
-    "main.383f507b.js.map": "/test_adaptive_marko/static/js/main.383f507b.js.map",
+    "main.fe5d2a8f.css.map": "/test_adaptive_marko/static/css/main.fe5d2a8f.css.map",
+    "main.2fba00a0.js.map": "/test_adaptive_marko/static/js/main.2fba00a0.js.map",
     "787.38d19b6f.chunk.js.map": "/test_adaptive_marko/static/js/787.38d19b6f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.612c7797.css",
-    "static/js/main.383f507b.js"
+    "static/css/main.fe5d2a8f.css",
+    "static/js/main.2fba00a0.js"
   ]
 }
