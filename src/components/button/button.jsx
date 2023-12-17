@@ -7,6 +7,7 @@ export const Button = ({
   disabled = false,
   type = 'button',
   modifiedStyle = '',
+  nameButton = 'button',
   children,
 }) => {
   const [style, setStyle] = useState('');
@@ -35,6 +36,7 @@ export const Button = ({
       }`}
       onClick={handlerButtonClick}
       disabled={disabled}
+      name={nameButton}
     >
       {children}
     </button>
