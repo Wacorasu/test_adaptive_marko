@@ -1,6 +1,6 @@
 import imagePreview from '../images/section_03_sample-kitchen_preview.png';
-import imageTest01 from '../images/section_03_sample-kitchen_t2.jpeg';
-import imageTest02 from '../images/section_03_sample-kitchen_t3.jpeg';
+import imageTest01 from '../images/section_03_sample-kitchen_t2.jpg';
+import imageTest02 from '../images/section_03_sample-kitchen_t3.jpg';
 import imageFull from '../images/section_03_sample-kitchen.png';
 
 export const DROPDOWN_LIST_PLANE = [
