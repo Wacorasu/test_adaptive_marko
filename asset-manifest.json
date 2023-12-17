@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/test_adaptive_marko/static/css/main.8367a6af.css",
+    "main.css": "/test_adaptive_marko/static/css/main.612c7797.css",
     "main.js": "/test_adaptive_marko/static/js/main.383f507b.js",
     "static/js/787.38d19b6f.chunk.js": "/test_adaptive_marko/static/js/787.38d19b6f.chunk.js",
     "static/media/section_01_background.png": "/test_adaptive_marko/static/media/section_01_background.c607a68f75be0843460f.png",
@@ -25,12 +25,12 @@
     "index.html": "/test_adaptive_marko/index.html",
     "static/media/icon_arrow.svg": "/test_adaptive_marko/static/media/icon_arrow.75891058a4418e71dec8.svg",
     "static/media/icon_arro_navigate.svg": "/test_adaptive_marko/static/media/icon_arro_navigate.405255701a83a8d587e2.svg",
-    "main.8367a6af.css.map": "/test_adaptive_marko/static/css/main.8367a6af.css.map",
+    "main.612c7797.css.map": "/test_adaptive_marko/static/css/main.612c7797.css.map",
     "main.383f507b.js.map": "/test_adaptive_marko/static/js/main.383f507b.js.map",
     "787.38d19b6f.chunk.js.map": "/test_adaptive_marko/static/js/787.38d19b6f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8367a6af.css",
+    "static/css/main.612c7797.css",
     "static/js/main.383f507b.js"
   ]
 }
