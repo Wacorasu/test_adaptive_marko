@@ -141,7 +141,7 @@ export const HomePage = () => {
               modifiedStyleIconOpen={stylesHomePage.catalogButtonIconOpen}
               modifiedStyleMain={stylesHomePage.catalogButtonColor}
               modifiedStyleText={stylesHomePage.catalogButtonText}
-              modifiedStyleListContainer={stylesHomePage.catalogListContainer}
+              modifiedStyleListContainer={stylesHomePage.catalogListContainerColor}
             >
               цвет
             </ButtonDropdown>

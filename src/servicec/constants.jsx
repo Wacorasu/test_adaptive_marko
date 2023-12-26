@@ -1,7 +1,9 @@
-import imagePreview from '../images/section_03_sample-kitchen_preview.png';
-import imageTest01 from '../images/section_03_sample-kitchen_t2.jpeg';
-import imageTest02 from '../images/section_03_sample-kitchen_t3.jpeg';
-import imageFull from '../images/section_03_sample-kitchen.png';
+import imagePreview from '../images/section_03_sample-kitchen_previe.webp';
+import imageTest01Preview from '../images/section_03_sample-kitchen_t2_small.webp';
+import imageTest02Preview from '../images/section_03_sample-kitchen_t3_small.webp';
+import imageTest01Full from '../images/section_03_sample-kitchen_t2.webp';
+import imageTest02Full from '../images/section_03_sample-kitchen_t3.webp';
+import imageFull from '../images/section_03_sample-kitchen.webp';
 
 export const DROPDOWN_LIST_PLANE = [
   {
@@ -82,33 +84,34 @@ export const DROPDOWN_LIST_STYLE = [
 ];
 
 export const DROPDOWN_LIST_COLOR = [
-    {
-      value: 'color01',
-      element: (
-        <>
-          Орех <sup>180</sup>
-        </>
-      ),
-    },
-    {
-      value: 'color02',
-      element: (
-        <>
-          Обсидиан <sup>3</sup>
-        </>
-      ),
-    },
-    {
-      value: 'color03',
-      element: (
-        <>
-          Морская волна <sup>115</sup>
-        </>
-      ),
-    },
-  ];
+  {
+    value: 'color01',
+    element: (
+      <>
+        Орех <sup>180</sup>
+      </>
+    ),
+  },
+  {
+    value: 'color02',
+    element: (
+      <>
+        Обсидиан <sup>3</sup>
+      </>
+    ),
+  },
+  {
+    value: 'color03',
+    element: (
+      <>
+        Морская волна <sup>115</sup>
+      </>
+    ),
+  },
+];
 
-export const  CATALOG_CARDS_DATA = [{
+export const CATALOG_CARDS_DATA = [
+  {
     title: 'Кухня 097 минимализм',
     subTitle: 'Угловая белая кухня со столешницей под бетон.',
     priceEconomy: '168 000',
@@ -118,46 +121,8 @@ export const  CATALOG_CARDS_DATA = [{
     images: [
       { preview: imagePreview, full: imageFull },
       { preview: imagePreview, full: imageFull },
-      { preview: imageTest01, full: imageTest01 },
-      { preview: imageTest02, full: imageTest02 },
-      { preview: imagePreview, full: imageFull },
-      { preview: imagePreview, full: imageFull },
-      { preview: imagePreview, full: imageFull },
-      { preview: imagePreview, full: imageFull },
-      { preview: imagePreview, full: imageFull },
-      { preview: imagePreview, full: imageFull },
-    ],
-  },{
-    title: 'Кухня 097 минимализм',
-    subTitle: 'Угловая белая кухня со столешницей под бетон.',
-    priceEconomy: '168 000',
-    priceStandard: '217 000',
-    pricePremium: '270 000',
-    length: '4900',
-    images: [
-      { preview: imagePreview, full: imageFull },
-      { preview: imagePreview, full: imageFull },
-      { preview: imageTest01, full: imageTest01 },
-      { preview: imageTest02, full: imageTest02 },
-      { preview: imagePreview, full: imageFull },
-      { preview: imagePreview, full: imageFull },
-      { preview: imagePreview, full: imageFull },
-      { preview: imagePreview, full: imageFull },
-      { preview: imagePreview, full: imageFull },
-      { preview: imagePreview, full: imageFull },
-    ],
-  },{
-    title: 'Кухня 097 минимализм',
-    subTitle: 'Угловая белая кухня со столешницей под бетон.',
-    priceEconomy: '168 000',
-    priceStandard: '217 000',
-    pricePremium: '270 000',
-    length: '4900',
-    images: [
-      { preview: imagePreview, full: imageFull },
-      { preview: imagePreview, full: imageFull },
-      { preview: imageTest01, full: imageTest01 },
-      { preview: imageTest02, full: imageTest02 },
+      { preview: imageTest01Preview, full: imageTest01Full },
+      { preview: imageTest02Preview, full: imageTest02Full },
       { preview: imagePreview, full: imageFull },
       { preview: imagePreview, full: imageFull },
       { preview: imagePreview, full: imageFull },
@@ -176,8 +141,8 @@ export const  CATALOG_CARDS_DATA = [{
     images: [
       { preview: imagePreview, full: imageFull },
       { preview: imagePreview, full: imageFull },
-      { preview: imageTest01, full: imageTest01 },
-      { preview: imageTest02, full: imageTest02 },
+      { preview: imageTest01Preview, full: imageTest01Full },
+      { preview: imageTest02Preview, full: imageTest02Full },
       { preview: imagePreview, full: imageFull },
       { preview: imagePreview, full: imageFull },
       { preview: imagePreview, full: imageFull },
@@ -185,4 +150,45 @@ export const  CATALOG_CARDS_DATA = [{
       { preview: imagePreview, full: imageFull },
       { preview: imagePreview, full: imageFull },
     ],
-  }]
+  },
+  {
+    title: 'Кухня 097 минимализм',
+    subTitle: 'Угловая белая кухня со столешницей под бетон.',
+    priceEconomy: '168 000',
+    priceStandard: '217 000',
+    pricePremium: '270 000',
+    length: '4900',
+    images: [
+      { preview: imagePreview, full: imageFull },
+      { preview: imagePreview, full: imageFull },
+      { preview: imageTest01Preview, full: imageTest01Full },
+      { preview: imageTest02Preview, full: imageTest02Full },
+      { preview: imagePreview, full: imageFull },
+      { preview: imagePreview, full: imageFull },
+      { preview: imagePreview, full: imageFull },
+      { preview: imagePreview, full: imageFull },
+      { preview: imagePreview, full: imageFull },
+      { preview: imagePreview, full: imageFull },
+    ],
+  },
+  {
+    title: 'Кухня 097 минимализм',
+    subTitle: 'Угловая белая кухня со столешницей под бетон.',
+    priceEconomy: '168 000',
+    priceStandard: '217 000',
+    pricePremium: '270 000',
+    length: '4900',
+    images: [
+      { preview: imagePreview, full: imageFull },
+      { preview: imagePreview, full: imageFull },
+      { preview: imageTest01Preview, full: imageTest01Full },
+      { preview: imageTest02Preview, full: imageTest02Full },
+      { preview: imagePreview, full: imageFull },
+      { preview: imagePreview, full: imageFull },
+      { preview: imagePreview, full: imageFull },
+      { preview: imagePreview, full: imageFull },
+      { preview: imagePreview, full: imageFull },
+      { preview: imagePreview, full: imageFull },
+    ],
+  },
+];

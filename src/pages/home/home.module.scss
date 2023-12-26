@@ -18,7 +18,6 @@
 
 .intoSection {
     width: 100%;
-    max-width: 1720;
     padding: 288px 150px 138px 150px;
     box-sizing: border-box;
     position: relative;
@@ -27,7 +26,7 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    background-image: url('../../images/section_01_background.png');
+    background-image: url('../../images/section_01_background.webp');
     background-size: cover;
     background-position: 0 0;
     background-repeat: no-repeat;
@@ -42,6 +41,7 @@
 
     @media screen and (max-width: 690px) {
         padding: 120px 0 40px 40px;
+        background-image: url('../../images/section_01_background_small.webp');
     }
 
     @media screen and (max-width: 520px) {
@@ -395,7 +395,7 @@
     z-index: 1;
     max-height: 532px;
     max-width: 420px;
-    background-image: url('../../images/section_02_background.png');
+    background-image: url('../../images/section_02_background.webp');
     background-size: contain;
     background-repeat: no-repeat;
     position: absolute;
@@ -654,7 +654,7 @@
     }
 
     @media screen and (max-width: 520px) {
-        padding: 25px 10px 20px 20px;
+        padding: 25px 15px 20px 15px;
     }
 
 }
@@ -798,6 +798,16 @@
     }
 }
 
+.catalogListContainerColor {
+    right: -70px;
+
+    @media screen and (max-width: 960px) {
+        margin: 10px 0 0 0;
+        padding: 9px 0 9px 10px;
+        gap: 10px;
+        right: -50px;
+    }
+}
 
 .catalogButtonText {
     @media screen and (max-width: 960px) {

@@ -35,7 +35,7 @@
 
 ### Запуск
 - Установка всех зависимостей: npm i
-- Запуск: npm run dev
+- Запуск: npm run start
 
 ### Ссылка на развернутое приложение 
 - https://wacorasu.github.io/test_adaptive_marko/
