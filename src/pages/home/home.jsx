@@ -113,8 +113,8 @@ export const HomePage = () => {
       </section>
       <section className={stylesHomePage.catalogSection}>
         <h2 className={stylesHomePage.catalogTitle}>Посмотрите наши работы</h2>
-        <div className={stylesHomePage.catalogButtonsContainer}>
-          <form className={stylesHomePage.catalogButtonsMenuContainer}>
+        <form className={stylesHomePage.catalogButtonsContainer}>
+          <div className={stylesHomePage.catalogButtonsMenuContainer}>
             <ButtonDropdown
               dropdownList={DROPDOWN_LIST_PLANE}
               modifiedStyleIcon={stylesHomePage.catalogButtonIcon}
@@ -145,7 +145,7 @@ export const HomePage = () => {
             >
               цвет
             </ButtonDropdown>
-          </form>
+          </div>
           <div className={stylesHomePage.catalogButtonsControlContainer}>
             <Button
               type='submit'
@@ -162,7 +162,7 @@ export const HomePage = () => {
               сбросить
             </Button>
           </div>
-        </div>
+        </form>
         <div className={stylesHomePage.catalogProductsContainer}>
           {CATALOG_CARDS_DATA?.length > 0 &&
             CATALOG_CARDS_DATA.map((item, index) => (
